@@ -1,0 +1,24 @@
+Process for regular observations...
+pull tracked teams from the database
+for each tracked team,
+    observe current status
+    check if current status matches last status:
+        update obs_time if so
+        add new entry if not
+        
+    lookup the team's current match history
+    for each opposing team in history,
+        check if it is in the team list, add to list if not
+    pull all opponents of the tracked team from the db
+    for each opponent,
+        observe current status
+        check if current status matches last status:
+            update obs_time if so
+            add new entry if not
+
+To do:
+-- make Team class that can be instantiated from the database or json
+-- a way to add a tracked team to the database
+-- write function observe(team_id)
+-- Observation class that can be instantiated from the database or json
+-- Classes to convert json to handy objects

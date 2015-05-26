@@ -23,9 +23,9 @@ class QueryLibrary:
     # Unofficial abstract properties
     query_str = ''
     return_class = ''
-    def __init__(self,arg,key)
+    def __init__(self,arg,key):
         self.query = query_str.format(match_id,api_key)
-    def get(self)
+    def get(self):
         r = make_request(self.query)
         return return_class(json=r.json())
     def make_request(str):

@@ -17,8 +17,8 @@ for each tracked team,
             add new entry if not
 
 To do:
--- make Team class that can be instantiated from the database or json
 -- a way to add a tracked team to the database
+-- write opponent to database
+-- get least of opponents per tracked team
+
 -- write function observe(team_id)
--- Observation class that can be instantiated from the database or json
--- Classes to convert json to handy objects
